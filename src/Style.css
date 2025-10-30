@@ -1,0 +1,399 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.menu {
+   
+    display:  flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 20px;
+    font-weight: bold;
+    font-family:sans-serif;
+    margin-bottom: 50px;
+    
+    
+}
+a{
+    text-decoration: none;
+}
+.continer{
+ max-width: 1100px;
+    margin: 0 auto;
+}
+.log{
+    text-decoration: none;
+    font-size: 33px;
+    font-weight: 800;
+    color:#1877c9
+}
+.menu-items a{
+    margin: 15px;
+    font-size: 22px;
+    font-weight: 400;
+}
+.cart{
+    background-color: #1877c9;
+    font-size: 20px;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 10px;
+
+}
+.card{
+    width: 100%;
+    height: 400px;
+    background-color: rgba(0, 0,0, 0.1);
+    color: white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px rgba(0, 0,0, 0.2) ;
+}
+.card .info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(1, 1,1, 0.7);
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+}
+.card span{
+    font-size: 1.5rem;
+    margin: 10px;
+}
+.btn{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    border-radius: 50%;
+    border: none;
+    background-color: #1877c9;
+    color: #fff;
+    padding: 10px;
+    margin:10px;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.btn-secondary{
+    background-color: rgba(255, 0, 0, 0.913);
+}
+.cart-container{
+    background-color:#fff;
+    box-shadow: 0,0,0,10px rgba(0, 0,0, 0.1);
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 10px;
+    grid-gap: 10px;
+    padding: 30px;
+    place-items: center;
+    border: 1px solid #ccc;
+   
+}
+.card-products{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    border-right: 1px solid #ccc ;
+    padding: 20px;
+}
+
+.product-card{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    width: 95%;
+    place-items: center;
+}
+.product-card img{
+   width: 80px;
+   height: 80px;
+   border-radius: 50%;
+ padding: 7px;
+ border:1px solid #ccc;
+object-fit: cover;
+/* display: block; */
+
+}
+
+.product-title span{
+    font-size: 1.2rem;
+    align-items: center;
+    font-weight: 400;
+    margin: 10px;
+}
+.product-title{
+    display: flex;
+   justify-content: flex-start;
+   align-items: center;
+
+}
+.delete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    /* border: 1px solid #ccc; */
+    cursor: pointer;
+    padding: 7px;
+   
+}
+.total-price{
+    font-size: 1.2rem;
+    border-top: 1px solid #ccc;
+}
+.payment-card{
+    width: 85%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+   border: 1px solid #ccc;
+   padding: 10px;
+   border-radius: 10px;
+   margin: 10px;
+   cursor: pointer;
+   text-align: center;
+
+ 
+}
+.payment-card:hover,
+.payment-card.selected{
+    background-color: #9fccf5;
+   border: 1px solid #1877c9;
+}
+/* .payment-card{
+    font-size: 1rem;
+    align-items: center;
+
+} */
+.number{
+    width: 85%;
+    padding:10px;
+    align-items: center;
+    border-radius: 10px;
+    border: 1px solid #1877c9;
+    margin: 10px;
+    font-size: 1rem;
+    font-weight: 700;
+    
+    
+}
+.bt{
+    width: 85%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    color: #fff;
+    background-color: #1877c9;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 10px;
+    cursor: pointer;
+    text-align: center;
+    margin-left: 10px;
+}
+.hh h1{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+}
+.about h1{
+    text-align: center;
+}
+.about-text{
+    font-size: 25px;
+    line-height: 1.5;
+    float: right;
+    margin: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+   
+}
+.about-p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    font-size: 1.2rem;
+    margin-top: 30px;
+    padding: 20px;
+    line-height: 1.5;
+
+}
+.abou-text img{
+    width: 400px;
+    height: 390px;
+    border-bottom-right-radius: 50px;
+   float: left;
+   border-top-left-radius: 50px;
+   border: 2px solid #1877c9;
+   margin: 0;
+}
+.about h1{
+    color: #1877c9;
+    font-size: 2.5rem;
+    font-weight:800;
+}
+/* Cotact Section  */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+.contact-section {
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+  background: transparent; /* keep your page background */
+}
+
+.contact-section .contact-container {
+  max-width: 600px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  color: #333;
+  transition: transform 0.3s ease;
+}
+
+.contact-section .contact-container:hover {
+  transform: translateY(-5px);
+}
+
+.contact-section .contact-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.contact-section .contact-header h2 {
+  font-size: 2em;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.contact-section .contact-header p {
+  color: #555;
+  font-size: 15px;
+}
+
+.contact-section .contact-form .form-group {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+.contact-section .contact-form input,
+.contact-section .contact-form textarea {
+  width: 100%;
+  padding: 14px 12px;
+  border: none;
+  border-bottom: 2px solid #bbb;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease;
+}
+
+.contact-section .contact-form label {
+  position: absolute;
+  top: 14px;
+  left: 12px;
+  color: #777;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  background: transparent;
+}
+
+.contact-section .contact-form input:focus,
+.contact-section .contact-form textarea:focus {
+  border-color: #007bff;
+}
+
+.contact-section .contact-form input:focus + label,
+.contact-section .contact-form input:not(:placeholder-shown) + label,
+.contact-section .contact-form textarea:focus + label,
+.contact-section .contact-form textarea:not(:placeholder-shown) + label {
+  top: -10px;
+  left: 5px;
+  font-size: 13px;
+  color: #007bff;
+  background: #fff;
+  padding: 0 5px;
+  border-radius: 3px;
+}
+
+.contact-section .contact-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.contact-section .btn {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  padding: 14px;
+  background: linear-gradient(135deg, #007bff, #00b4d8);
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  overflow: hidden;
+  transition: background 0.3s ease;
+}
+
+.contact-section .btn:hover {
+  background: linear-gradient(135deg, #0056b3, #0085a1);
+}
+
+.contact-section .btn:active::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0;
+  height: 0;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: contact-ripple 0.6s linear;
+}
+
+@keyframes contact-ripple {
+  to {
+    width: 300%;
+    height: 300%;
+    opacity: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .contact-section .contact-container {
+    padding: 30px 25px;
+  }
+}
+
+
+
+ 
