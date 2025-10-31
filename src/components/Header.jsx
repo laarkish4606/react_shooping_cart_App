@@ -5,7 +5,7 @@ const Header=({})=>{
     const{products}=useShop()
     return(
         <div className="menu">
-            <Link className="log" to="/">DO IT</Link>
+            <Link className="log" to="/">React App</Link>
             <div className="menu-items">
                 <Link to="/">Home</Link>
                 <Link to="/About">About</Link>
