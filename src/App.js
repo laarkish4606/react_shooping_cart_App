@@ -5,6 +5,7 @@ import About from "./pages/about"
 import Contact from "./pages/contact"
 import Cart from "./pages/cart"
 import { useState } from "react";
+import Footer from "./components/Footer";
 
 
 const App =()=>{
@@ -19,6 +20,7 @@ const App =()=>{
             <Route path="contact" element={<Contact />}/>
             <Route path="cart" element={<Cart setCarts={setCarts} />}/>
         </Routes>
+         <Footer/>
         </div>
     )
 }

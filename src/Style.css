@@ -106,6 +106,13 @@ a{
     border: 1px solid #ccc;
    
 }
+@media only screen and (max-width: 600px) {
+ .card-products{
+    grid-template-columns: 1fr;
+  }
+}
+
+
 .card-products{
     display: flex;
     align-items: center;
@@ -172,18 +179,19 @@ object-fit: cover;
    cursor: pointer;
    text-align: center;
 
- 
 }
+
+
 .payment-card:hover,
 .payment-card.selected{
     background-color: #9fccf5;
    border: 1px solid #1877c9;
 }
-/* .payment-card{
+.payment-card{
     font-size: 1rem;
     align-items: center;
 
-} */
+}
 .number{
     width: 85%;
     padding:10px;
@@ -394,6 +402,80 @@ object-fit: cover;
   }
 }
 
+.footer {
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 20px;
+  border-top: 1px solid #9fccf5;
+  padding: 10px;
+  margin: 10px;
+}
+.footer,p{
+  font-size: 1.2rem;
+}
 
+/* 📱 Responsive Design */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px 20px;
+  }
+
+  .menu-items {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    gap: 10px;
+  }
+
+  .menu-items a {
+    display: block;
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid #eee;
+  }
+
+  .cart1 {
+    align-self: flex-end;
+    margin-top: 10px;
+  }
+}
+
+
+@media (min-width: 992px) {
+  .payment-cards {
+    position: sticky;
+    top: 20px;       /* distance from top when scrolling */
+    height: fit-content;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .cart-container {
+    grid-template-columns: 1fr;
+    padding: 18px;
+    gap: 14px;
+  }
+
+ 
+  .payment-cards {
+    margin-top: 6px;
+    padding: 16px;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .cart-container {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .payment-cards {
+    padding: 12px;
+  }
+}
 
  

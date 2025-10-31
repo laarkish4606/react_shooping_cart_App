@@ -13,6 +13,7 @@ const Header=({})=>{
                 <Link to="/Cart">Cart</Link>
             </div>
             <Link className="cart1" to="/Cart"><span className="cart">{products.length}</span></Link>
+         
            
         </div>
     )
